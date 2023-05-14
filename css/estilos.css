@@ -12,42 +12,29 @@ body{
     height: 100vh;
 
 }
-.contenedorNav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.colorFondo{
     background-color: rgb(69, 69, 69);
-    padding: 1.0rem 3rem;
-    height: 12%;
 }
-
-.contenedorLogo{
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.contenedorLogo h2{
+.navbar-light .navbar-brand{
     color: white;
 }
-.contenedorLogo img{
-    width: 40%;
-    object-fit: cover;
-    margin-right: 10px;
+.navbar-nav .nav-item .nav-link{
+    color: grey;
 }
-.navegacion ul{
-    height: 100%    ;
-    display: flex;
-    list-style: none;
-}
-.linkNav{
-    text-decoration: none;
-    padding-left: 1.3rem;
-    font-size: 1rem;
-    font-weight: 500;
+.navbar-light .navbar-nav .nav-link.active{
     color: white;
+}
+.navbar-light .navbar-nav .colorComprarTickets{
+    color: green;
 }
 .contenedorConferencia{
+    height: 60vh;
+}
+.carousel-inner{
+    height: 89vh;
+}
+
+/*.contenedorConferencia{
     background:linear-gradient(to right, #0000009c,#0000009c ),url("../assets/img/ba1.jpg");
     background-size: cover;
     background-position: center;
@@ -57,8 +44,8 @@ body{
     justify-content: flex-end;
     align-items: center;
     text-align: right;
-}
-.hijoConferencia{
+}*/
+/*.hijoConferencia{
     color: white;
     display: flex;
     flex-direction: column;
@@ -106,51 +93,46 @@ body{
         color: white;
         border: 1px;
         padding: 8px;
-}
+}*/
 .sectionOradores h2{
     text-align: center;
 }
-.padreCards{
-    display: flex;
-    height: 100vh;
-    width: 80%;
-    text-align: left;
-    margin: 0 auto;
-}
-.padreCards img{
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-}
-.card{
-    display: inline-block;
-    width: 30%;
-    height: 75%;
-    border: 1px solid rgb(180, 180, 180);
-    margin: 15px;
-
-}
-.cardBody{
-    margin: 15px;
-}
-.caracteristicasCard{
-    display: flex;
+.sectionOradores h2 span{
+    font-size: 1rem;
 }
 .javascript{
-    margin-right: 10px;
+    font-size: 12px;
     border-radius: 5px;
     border: 1px;
     padding: 3px;
     background-color: rgb(255, 202, 29);
 }
 .react{
-    margin-right: 10px;
+    font-size: 12px;
     border-radius: 5px;
     border: 1px;
     padding: 3px;
     background-color: rgb(41, 149, 236);
     color: white;
 }
+.negocios{
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px;
+    padding: 3px;
+    background-color: rgb(116, 116, 116);
+    color: white;
+}
+.startups{
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px;
+    padding: 3px;
+    background-color: rgb(236, 41, 41);
+    color: white;
+}
+
+
 .padreLugarFecha{
     display: flex;
     flex-direction: row;
@@ -207,8 +189,8 @@ body{
     margin: 10px;
 }
 .input{
-    height: 26px;
-    width: 351px;
+    height: 37px;
+    width: 100%;
     background-color: #96c93e;
     border-radius: 5px;
     color: white;
@@ -224,7 +206,41 @@ body{
     padding: 15px;
     padding-left: 50px;
 }
-
+.lugarFecha{
+    height: 60vh;
+}
+.izquierda{
+    background-image: url(../assets/img/honolulu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    border: 1px solid white;
+}
+.derecha{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    height: 100%;
+    border: 1px solid white;
+}
+@media screen and (max-width:767px){
+    .header{
+        height: 32vh;
+    }
+    .lugarFecha{
+        height: initial;
+    }
+    .izquierda{
+        height: 40vh;
+    }
+    .derecha{
+        height: 40vh;
+    }
+    .formulario{
+        height: 41vh;
+    }
+}
+/* media queries para proyecto flexbox
 @media screen and (min-width:0px) and (max-width:1024px){
     .contenedorNav{
         flex-direction: column;
@@ -309,4 +325,4 @@ body{
         display:block;
 
     }
-}
+}*/
